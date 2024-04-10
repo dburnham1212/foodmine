@@ -5,6 +5,7 @@ import { CartItem } from '../../../shared/models/CartItem';
 import { TitleComponent } from '../../partials/title/title.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 
 @Component({
   selector: 'app-cart-page',
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule,
-    TitleComponent
+    TitleComponent,
+    NotFoundComponent
   ],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.css'
