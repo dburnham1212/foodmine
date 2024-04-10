@@ -22,9 +22,13 @@ export class FoodService {
     return sample_tags;
   }
 
-  getAllFoogsByTag(tag:string):Food[] {
+  getAllFoodsByTag(tag:string):Food[] {
     return tag === "All" 
     ? this.getAll()
     : this.getAll().filter(food => food.tags?.includes(tag))
+  }
+
+  getFoodById(foodId: string) {
+    return this.getAll().find(food => food.id == foodId) ?? new Food();
   }
 }
