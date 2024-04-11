@@ -67,3 +67,42 @@
     1. Home Page
     2. Food Page
     3. Cart Page
+11. Connect To Backend
+  1. Create backend folder
+  2. npm init
+  3. npm install typescript
+  4. Create tsconfig.json
+  5. Create .gitignore
+  6. Copy data.ts to backend/src
+  8. Create server.ts
+    1. install @types
+    2. Add Apis
+  9. npm install nodemon ts-node --save-dev
+  10. Add urs.ts to frontend
+  11. Add HttpClient modul
+  12. Update food service
+12. Login Page
+  1. Generate Component
+    1. Add to routes
+    2. Add ts
+    3. Add html
+      1. Import Reactive Forms Module
+    4. Add css
+  2. Add Login Api
+    1. Use json
+    2. Add jsonwebtoken
+    3. Test Using Postman
+  3. Generate User Service
+    1. Generate user model
+    2. Add user subject
+    3. Add login method
+      1. Add user urls
+      2. Generate user login interface
+      3. Add ngx-toast
+        1. Import Module
+        2. Import BrowserAnimationsModule
+        3. Add styles to angular.json
+      4. Add to header
+    1. Add local storage methods
+    2. Add logout method
+      1. Add to header 
