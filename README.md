@@ -98,7 +98,7 @@
     3. Add login method
       1. Add user urls
       2. Generate user login interface
-      3. Add ngx-toast
+      3. Add ngx-toastr
         1. Import Module
         2. Import BrowserAnimationsModule
         3. Add styles to angular.json
@@ -106,3 +106,25 @@
     1. Add local storage methods
     2. Add logout method
       1. Add to header 
+13. Make Components for login page
+  1. Input Container
+  2. Input Validation
+  3. Text Input
+  4. Default Button
+14. Connect Login API To MongoDB Atlas
+  1. Moving apis to routers
+  2. Create MongoDB Atlas
+  3. Create .env file
+  4. Install
+    1. mongoose
+    2. dotenv
+    3. bcryptjs
+    4. jsonwebtoken
+    5. express-async-handler
+  5. Connect to MongoDB Atlas
+  6. Use MongoDB instead of data.ts in apis
+15. Register User
+  1. Add Register api
+  2. Add Register service method
+  3. Add Register Link
+  4. Add Register Component

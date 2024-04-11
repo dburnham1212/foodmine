@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { TitleComponent } from '../../partials/title/title.component';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../../services/user.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { TextInputComponent } from '../../partials/text-input/text-input.component';
 import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
 
@@ -12,6 +12,7 @@ import { DefaultButtonComponent } from '../../partials/default-button/default-bu
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     TitleComponent,
     ReactiveFormsModule,
     TextInputComponent,
