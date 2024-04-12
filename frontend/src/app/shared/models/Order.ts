@@ -10,5 +10,5 @@ export class Order{
   addressLatLng?:LatLng;
   paymentId!: string;
   createdAt!: string;
-  stats!: string;
+  status!: string;
 }
