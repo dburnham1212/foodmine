@@ -7,6 +7,7 @@ import { TextInputComponent } from "../../partials/text-input/text-input.compone
 import { OrderItemsListComponent } from "../../partials/order-items-list/order-items-list.component";
 import { ReactiveFormsModule } from '@angular/forms';
 import { MapComponent } from '../../partials/map/map.component';
+import { PaypalButtonComponent } from "../../partials/paypal-button/paypal-button.component";
 
 @Component({
     selector: 'app-payment-page',
@@ -14,11 +15,12 @@ import { MapComponent } from '../../partials/map/map.component';
     templateUrl: './payment-page.component.html',
     styleUrl: './payment-page.component.css',
     imports: [
-      TitleComponent, 
-      TextInputComponent, 
-      OrderItemsListComponent,
-      ReactiveFormsModule,
-      MapComponent
+        TitleComponent,
+        TextInputComponent,
+        OrderItemsListComponent,
+        ReactiveFormsModule,
+        MapComponent,
+        PaypalButtonComponent
     ]
 })
 export class PaymentPageComponent {
