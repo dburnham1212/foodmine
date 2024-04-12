@@ -41,6 +41,7 @@ export class RegisterPageComponent implements OnInit {
       validators: PasswordsMatchValidator('password', 'confirmPassword')
     });
 
+    console.log("queryParams", this.activatedRoute.snapshot.queryParams);
     this.returnUrl = this.activatedRoute.snapshot.queryParams['returnUrl'];
   }
 

@@ -28,6 +28,7 @@ router.post("/login", asyncHandler(
 
     if(user && (await bcrypt.compare(password, user.password))) {
       res.send(generateTokenResponse(user));
+
     } else {
       res.status(HTTP_BAD_REQUEST).send("User name or password is not valid!");
     }
@@ -66,8 +67,7 @@ const generateTokenResponse = (user:any) => {
     email: user.email, isAdmin: user.isAdmin
   },"SomeRandomText", { expiresIn:"30d" });
 
-  user.token = token;
-  return user;
+  return {...user.toObject(), token};
 }
 
 export default router;
